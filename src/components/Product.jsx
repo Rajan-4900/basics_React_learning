@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Product = (name,price,color) => {
+const Product = ({name,price,color}) => {
   return (
     <div>
         <h1>Brand - {name}</h1>
