@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Product = () => {
+const Product = (props) => {
   return (
     <div>
-        <h1>Hello react Learning Process Started</h1>
+        <h1>Brand - {props.name}</h1>
+        <h1>Price - {props.price}</h1>
+        <h1>Color - {props.color}</h1>
 
     </div>
   )

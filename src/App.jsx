@@ -5,9 +5,7 @@ const App = () => {
 
   return (
     <>
-    <Product />
-    <Product />
-    <Product />
+    <Product name="laptop 1" price={1000} color="red" />
     </>
   );
 };
