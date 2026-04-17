@@ -1,22 +1,29 @@
-import React from 'react'
+import React from 'react';
 
 const Product = ({ name, price, color, data = {} }) => {
+  console.log(data.ram);
   return (
-    <div>
+    // inline styling - style={{color : 'red', backgroundColor : 'black'}}
+    <div style={{
+      backgroundColor : 'white',
+      color : 'black',
+      border : '1px solid yellow',
+      margin : '10px',
+      padding : '10px',
+      borderRadius : '5px'
+    }}>
       <h1>Brand - {name}</h1>
       <h3>Price - {price}</h3>
       <h3>Color - {color}</h3>
-
-      {data.ram && (
+      {/* {data.brand && (
         <>
-        <h3>Name - {data.name}</h3>
-        <h3>Price - {data.price}</h3>
-        <h3>Color - {data.color}</h3>
+        <p>Brand - {data.brand}</p>
+        <p>Cost - {data.cost}</p>
+        <p>Color - {data.colour}</p>
       </>
-      )}
-      
+      )}       */}
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;

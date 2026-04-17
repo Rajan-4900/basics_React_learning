@@ -1,19 +1,19 @@
 import React from 'react';
 import Product from "./components/Product";
-import Items from "./components/items";
+import Items from "./components/Items";
 
 const App = () => {
 
   const obj = {
-    name : "BMR",
-    price : 10000000,
-    color : 'white'
+    brand : "BMW",
+    cost : 10000000,
+    colour : 'white'
   }
-
+  
   return (
     <>
-    <Product name="laptop 1" price={21000} color="red"  data= {obj} />
-    <Product name="laptop 2" price={50000} color="silver"  data = {obj} />
+    <Product name="laptop 1" price={21000} color="red"  data={obj} />
+    <Product name="laptop 2" price={50000} color="silver"/>
 
     {/* <Items /> */}
     </>
