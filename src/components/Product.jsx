@@ -1,17 +1,17 @@
 import React from 'react';
 
 const Product = ({ name, price, color, data = {} }) => {
-  // console.log(data.ram);
 
   // internal styling - using css classes
-  const Style = {
-    backgroundColor: 'Yellow',
-    color: 'Black',
-    padding: '10px',
-    margin: '10px',
-    border : '1px solid red',
-    borderRadius : '5px'
-  }
+  // const Style = {
+  //   backgroundColor: 'Yellow',
+  //   color: 'Black',
+  //   padding: '10px',
+  //   margin: '10px',
+  //   border : '1px solid red',
+  //   borderRadius : '5px'
+  // }
+
   return (
     // inline styling - style={{color : 'red', backgroundColor : 'black'}}
     <div
@@ -24,7 +24,10 @@ const Product = ({ name, price, color, data = {} }) => {
       //   padding: '10px',
       //   borderRadius: '5px'
       // }}
-      style={Style}
+
+      // style={Style} // it is used to apply the internal CSS styling
+
+      className="container" // it used to apply external CSS Styling
     >
       <h1>Brand - {name}</h1>
       <h3>Price - {price}</h3>

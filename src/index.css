@@ -2,3 +2,12 @@ body {
   background-color: black;
   color: white;
 }
+
+.container {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
