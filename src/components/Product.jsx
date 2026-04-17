@@ -1,4 +1,5 @@
 import React from 'react';
+import "./product.css";
 
 const Product = ({ name, price, color, data = {} }) => {
 
@@ -25,9 +26,11 @@ const Product = ({ name, price, color, data = {} }) => {
       //   borderRadius: '5px'
       // }}
 
-      // style={Style} // it is used to apply the internal CSS styling
+       // style={Style} // it is used to apply the internal CSS styling
 
-      className="container" // it used to apply external CSS Styling
+      // className="container" // it used to apply external CSS Styling
+
+      className = "con" // in external css which is created by new product component
     >
       <h1>Brand - {name}</h1>
       <h3>Price - {price}</h3>
