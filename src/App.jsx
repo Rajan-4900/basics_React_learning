@@ -2,6 +2,7 @@ import React from 'react';
 import Product from "./components/Product";
 import Items from "./components/Items";
 import Events from "./components/Events";
+import UseState from "./components/Usestate";
 
 const App = () => {
 
@@ -19,7 +20,9 @@ const App = () => {
 
     {/* <Items /> */}
 
-    <Events />
+    {/* <Events /> */}
+
+    <UseState />
     </>
 
   );
