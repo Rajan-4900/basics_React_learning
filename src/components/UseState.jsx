@@ -10,12 +10,14 @@ const Usestate = () => {
     const increment = () => {
         // counter++;
         // console.log(counter);
-        setCounter(counter + 1); // it is used to update the state variable and it takes the new value of the state variable as an argument
+        // setCounter(counter + 1); // it is used to update the state variable and it takes the new value of the state variable as an argument
+        setCounter(prevState => prevState + 1); // it is used to update the state variable and it takes a function as an argument which returns the new value of the state variable
     }
     const decrement = () => {
         // counter--;
         // console.log(counter);
-        setCounter(counter - 1); // it is used to update the state variable and it takes the new value of the state variable as an argument
+        // setCounter(counter - 1); // it is used to update the state variable and it takes the new value of the state variable as an argument
+        setCounter(prevState => prevState - 1); // it is used to update the state variable and it takes a function as an argument which returns the new value of the state variable
     }
 
   return (
