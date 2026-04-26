@@ -3,14 +3,15 @@ import Product from "./components/Product";
 import Items from "./components/Items";
 import Events from "./components/Events";
 import UseState from "./components/Usestate";
+import Map from "./components/Map";
 
 const App = () => {
 
-  const obj = {
-    brand : "BMW",
-    cost : 10000000,
-    colour : 'white'
-  }
+  // const obj = {
+  //   brand : "BMW",
+  //   cost : 10000000,
+  //   colour : 'white'
+  // }
 
   
   return (
@@ -19,10 +20,10 @@ const App = () => {
     <Product name="laptop 2" price={50000} color="silver"/> */}
 
     {/* <Items /> */}
-
     {/* <Events /> */}
+    {/* <UseState /> */}
 
-    <UseState />
+    <Map />
     </>
 
   );
