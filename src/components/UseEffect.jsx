@@ -6,8 +6,10 @@ const UseEffect = () => {
 
     useEffect(() => {
         console.log("Use effect Is runnig")
-        document.title = "Raj" // this will show the title of the tab name
-    }, [])
+        // document.title = "Raj" // this will show the title of the tab name
+        document.title = counter // this will make changes or changes the number in the tab title name
+    }, [counter]) //dependecy array 
+                  // this will work by setting the value inside the "[]" this bracket
     
   return (
     <div>
