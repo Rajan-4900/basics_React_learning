@@ -4,6 +4,7 @@ import Items from "./components/Items";
 import Events from "./components/Events";
 import UseState from "./components/Usestate";
 import Map from "./components/Map";
+import Filter from './components/Filter';
 
 const App = () => {
 
@@ -22,8 +23,8 @@ const App = () => {
     {/* <Items /> */}
     {/* <Events /> */}
     {/* <UseState /> */}
-
-    <Map />
+    {/* <Map /> */}
+    <Filter />
     </>
 
   );
