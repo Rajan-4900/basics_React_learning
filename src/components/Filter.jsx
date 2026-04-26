@@ -8,11 +8,13 @@ const Filter = () => {
         { id: 4, name: "detto", active: false },
     ];
 
+    // easy to code for this filter function
     // const active_person = person.filter(data => !data.active)
     // console.log(active_person);
     return (
         <div>
-            {person.filter((data) => !data.active).map((item) => ( // this is for diaplying in the screen for true 
+            // this is the complex code for this filter function
+            {person.filter((data) => data.active).map((item) => ( // this is for diaplying in the screen for true 
                 <div key={item.id}>
                     <h1>{item.name}</h1>
                 </div>
