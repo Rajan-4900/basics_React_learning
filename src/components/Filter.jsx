@@ -12,7 +12,7 @@ const Filter = () => {
     // console.log(active_person);
     return (
         <div>
-            {person.filter((data) => data.active).map((item) => ( // this is for diaplying in the screen for true 
+            {person.filter((data) => !data.active).map((item) => ( // this is for diaplying in the screen for true 
                 <div key={item.id}>
                     <h1>{item.name}</h1>
                 </div>
