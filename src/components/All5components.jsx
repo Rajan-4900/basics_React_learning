@@ -2,6 +2,7 @@ import React from 'react'
 import "./product.css"; // it is used to import the external CSS file in react and it is used to apply the CSS styling to the component
 import { useState } from 'react'; // it is function which is used to create state variable in functional component
 
+
 const All5components = () => {
 
     // this is a product component which we can use for displaying the product details in react
@@ -129,6 +130,58 @@ const All5components = () => {
         )
     }
 
+    // this is the Map function 
+    const Map = () => {
+        // const data = ["Google", "Microsoft", "Apple", "Amazon"]
+        const smartPhone = [
+            { id: 1, model: "Iphone 17 pro", img : "https://m.media-amazon.com/images/I/71JGCn1z1TL._AC_UY327_FMwebp_QL65_.jpg", },
+            { id: 2, model: "Iphone 16 pro", img : "https://m.media-amazon.com/images/I/71JGCn1z1TL._AC_UY327_FMwebp_QL65_.jpg", },
+            { id: 3, model: "Iphone 15 pro", img : "https://m.media-amazon.com/images/I/71JGCn1z1TL._AC_UY327_FMwebp_QL65_.jpg", }
+        ];
+        return (
+            <>
+            <div>
+            {smartPhone.map((data) => (
+                <div key={data.id}>
+                    <img style={{ width: "150px" }} src={data.img} alt="" />
+                    <h3>{data.model}</h3>
+                </div>
+            ))}
+            </div>
+                {/* {data.map((element, index) => (
+                    <div key={index}>
+                        <h1>{element}</h1>
+                    </div>
+                ))} */}
+
+            </>
+        )
+    }
+
+    //  this is filter function to filter the values
+    const Filter = () => {
+        const person = [
+            { id: 1, name: "Raj", active: true },
+            { id: 2, name: "Raju", active: false },
+            { id: 3, name: "bot", active: true },
+            { id: 4, name: "detto", active: false },
+        ];
+
+        // easy to code for this filter function
+        // const active_person = person.filter(data => !data.active)
+        // console.log(active_person);
+        return (
+            <div>
+                // this is the complex code for this filter function
+                {person.filter((data) => data.active).map((item) => ( // this is for diaplying in the screen for true 
+                    <div key={item.id}>
+                        <h1>{item.name}</h1>
+                    </div>
+                ))}
+            </div>
+        )
+    }
+
 }
 
 
@@ -136,3 +189,5 @@ export default All5components;
 export default Product;
 export default Usestate;
 export default Events;
+export default Map;
+export default Filter;
