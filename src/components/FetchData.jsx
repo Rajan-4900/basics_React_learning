@@ -18,7 +18,7 @@ const FetchData = () => {
               // this is map function used to map the data
         <div>
             {Api_data.map((items) => (
-                <div key={items.id}> 
+                <div key={items.id} style={{textAlign:"center", backgroundColor:"white",color:"black", margin:"10px", padding:"10px"}}> 
                     <h2>{items.title}</h2> 
                 </div>
             ))}
