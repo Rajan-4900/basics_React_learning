@@ -1,19 +1,22 @@
 import React from 'react'
 
 const FormHandling = () => {
+    const [name, setname] = useState('')
+    const [email, setemail] = useState('')
+    const [password, setepassword] = useState('')
   return (
     <>
     <form>
     <div>
-        Name :- <input type="text" placeholder='Enter Your Full Name' />
+        Name :- <input type="text" value={name} placeholder='Enter Your Full Name' />
     </div>
     <br />
     <div>
-        Email :- <input type="email" placeholder='Enter Your Email' />
+        Email :- <input type="email" value={email} placeholder='Enter Your Email' />
     </div>
     <br />
     <div>
-        Password :- <input type="password" placeholder='Enter Your Password' />
+        Password :- <input type="password" value={password} placeholder='Enter Your Password' />
     </div>
     <br />
     <div>
