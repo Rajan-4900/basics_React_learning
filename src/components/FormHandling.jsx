@@ -25,7 +25,7 @@ const FormHandling = () => {
     // to stop the browser default reload option automaticaly
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        // console.log(name,email,password)
+        console.log(formData)
     }
     return (
         <>
