@@ -12,7 +12,15 @@ const FormHandling = () => {
         email: '',
         password: '',
         phone: ''
-    }) // object created
+    }); // object created
+
+    // onChange firing pr triggering to type in displayed input when project is running
+    const changeHandler = (e) => {
+        const {name, value} = e.target;
+
+        // calling function ... -> spread operator
+        setformData({...formData,[name]:value})
+    }
 
     // to stop the browser default reload option automaticaly
     const onSubmitHandler = (e) => {
@@ -28,9 +36,9 @@ const FormHandling = () => {
                 </div> */}
 
                 {/* this is for using n number of states */}
-                {/* Name :- <input,identifying,types of i/p,value useState,      placehoder*/}
+                {/* Name :- <input,  calling the func,       identifying,types of i/p,value useState,      placehoder*/}
                 <div>
-                    Name :- <input name='name' type="text" value={formData.name} placeholder='Enter Your Full Name' />
+                    Name :- <input onChange={changeHandler} name='name' type="text" value={formData.name} placeholder='Enter Your Full Name' />
                 </div>
                 <br />
                 {/* <div>
@@ -38,18 +46,18 @@ const FormHandling = () => {
                 </div>
                 <br /> */}
                 <div>
-                    Email :- <input name='email' type="email" value={formData.email} placeholder='Enter Your Email' />
+                    Email :- <input onChange={changeHandler} name='email' type="email" value={formData.email} placeholder='Enter Your Email' />
                 </div>
                 <br />
                 {/* <div>
                     Password :- <input onChange={(e)=>setepassword(e.target.value)} type="password" value={password} placeholder='Enter Your Password' />
                 </div> */}
                 <div>
-                    Password :- <input name='password' type="password" value={formData.password} placeholder='Enter Your Password' />
+                    Password :- <input onChange={changeHandler} name='password' type="password" value={formData.password} placeholder='Enter Your Password' />
                 </div>
                 <br />
                 <div>
-                    Phone :- <input name='phone' type="phone" value={formData.phone} placeholder='Enter Your Phone number' />
+                    Phone :- <input onChange={changeHandler} name='phone' type="phone" value={formData.phone} placeholder='Enter Your Phone number' />
                 </div>
                 <br />
                 <div>
