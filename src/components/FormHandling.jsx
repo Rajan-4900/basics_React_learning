@@ -28,6 +28,7 @@ const FormHandling = () => {
                 </div> */}
 
                 {/* this is for using n number of states */}
+                {/* Name :- <input,identifying,types of i/p,value useState,      placehoder*/}
                 <div>
                     Name :- <input name='name' type="text" value={formData.name} placeholder='Enter Your Full Name' />
                 </div>
